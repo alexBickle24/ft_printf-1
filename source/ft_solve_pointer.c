@@ -33,8 +33,8 @@ int	ft_solve_pointer(t_info *info)
 	ptr = va_arg(info->arguments, void *);
 	if (ptr == NULL)
 	{
-		ft_putstr_fd("0x0", 1);
-		return (3);
+		ft_putstr_fd("0x0", 1); // cambialo por esto "ft_putstr_fd("(nil)", 1);" es lo que hace lo original
+		return (3); // return (5);
 	}
 	ft_putstr_fd("0x", 1);
 	len = 2;
